@@ -48,12 +48,10 @@
     color: rgb(250,250,250);
 }
 
-/*new change*/
 #main-nav ul {
     position: relative;
     right: 3.5%;
 }
-/*new change*/
 
 /*
 footer {
@@ -117,7 +115,7 @@ section {
     position: relative;
     bottom: 12px;
     right: 9px;
-    width: 80%;  /*new change*/
+    width: 80%;
 }
 
 #main-content-container {
@@ -169,7 +167,7 @@ section h3 {
     margin: 0 auto;
 }
 
-.news-article img {
+.main-news-image {
     width: 100%;
 }
 
@@ -197,7 +195,6 @@ blockquote {
     font-style: italic;
 }
 
-/*new changes*/
 @media screen and (max-width: 860px) {
     section {
         width: 97%;
@@ -259,4 +256,9 @@ blockquote {
         width: 45%;
     }
 }
-/*new changes*/
+
+.secondary-news-image {
+    width: 90%;
+    padding: 2% 5%;
+}
+
