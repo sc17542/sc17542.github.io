@@ -1,0 +1,55 @@
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.purple {
+    background-color: mediumpurple;
+}
+
+body {
+    background-image: url(images/halloween-night.jpeg);
+}
+
+#site-header {
+    background-color: darkorange;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#picture-column img {
+    width: 100%;
+    padding: 40px 0 10px;
+}
+
+#intro-p-column p {
+    padding: 20px 0;
+}
+
+#tips-heading-column {
+    padding-bottom: 10px;
+}
+
+#tips-column {
+    padding-bottom: 10px;
+}
+
+#sources-column {
+    padding-bottom: 15px;
+}
+
+#sources-column a {
+    color: darkblue;
+}
+
+#site-header {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center
+}
+
