@@ -1,0 +1,40 @@
+#home-heading, #pokedex-heading, #maps-heading {
+    font-size: 2em;
+}
+
+#home-heading-column, #pokedex-heading-column, #starter-pokemon-heading, #maps-heading-column {
+    display: flex;
+    justify-content: center;
+}
+
+.map-row img {
+    width: 100%;
+}
+
+.gray {
+    background-color: rgb(200, 200, 200);
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.7);
+/*    background-color: rgba(0, 0, 0, 0.4);*/
+    color: black;
+    line-height: 0.7;
+}
+
+.carousel-caption h5 {
+    font-size: 2.25em;
+}
+
+.carousel-caption p {
+    font-size: 1.25em;
+}
+
+#welcome-heading, #starter-pokemon-heading {
+    font-size: 1.75em;
+}
+
+.nav a:hover {
+    background-color: rgb(200, 200, 200);
+    color: white;
+}
