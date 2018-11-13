@@ -262,3 +262,39 @@ blockquote {
     padding: 2% 5%;
 }
 
+#next-news-page-link {
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+#next-news-page-link:hover {
+    color: rgb(255, 90, 39);
+}
+
+#prev-news-page-link {
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+#prev-news-page-link:hover {
+    color: rgb(255, 90, 39);
+}
+
+#prev-next-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#news-pages-links-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+#news-pages-links-container a {
+    text-decoration: none;
+}
+
+#news-pages-links-container a:hover {
+    color: rgb(255, 90, 39);
+}
