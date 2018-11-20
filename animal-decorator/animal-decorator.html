@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Decorator</title>
+</head>
+
+<body>
+    <h1>Animal Decorator</h1>
+    
+    <h2>Click and put the hat on the cat!</h2>
+    
+    <img id="cat" style="width: 500px;" src="images/cat.jpeg" alt="Tabby cat">
+    
+    <img id="hat" style="width: 150px; position: absolute;" src="images/santa-hat.png" alt="Santa hat">
+    
+    <br>
+    
+    <h2>Click to starting drawing on the cat!</h2>
+    
+    <div id='draw-surface' style="width: 500px;">
+        <img id="white-cat" style="width: 500px;" src="images/white-cat.jpeg" alt="White cat">
+        
+        <div style="width: 2px; height: 2px; background-color: black; position: absolute;"></div>
+    </div>
+    
+    <button id="clear-button">Clear drawing</button>
+    
+    <script src="animal-decorator.js"></script>
+</body>
+</html>
