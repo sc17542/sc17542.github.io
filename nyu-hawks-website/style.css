@@ -285,6 +285,11 @@ blockquote {
     justify-content: space-between;
 }
 
+#next-container {  /*for news-1 only*/
+    display: flex;
+    justify-content: flex-end;
+}
+
 #news-pages-links-container {
     display: flex;
     justify-content: center;
