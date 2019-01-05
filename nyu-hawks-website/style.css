@@ -303,3 +303,9 @@ blockquote {
 #news-pages-links-container a:hover {
     color: rgb(255, 90, 39);
 }
+
+#news-article-posted-date {
+    font-size: 1.0625em;
+    position: relative;
+    top: -4px;
+}
