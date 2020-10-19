@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>National Museum of Mathematics</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Average+Sans|Cambay|NTR|Palanquin|Roboto|Telex" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="site-header">
+        <div>
+            <a href="index.html">
+                <img src="images/momath-logo-with-text.png" alt="The logo of MoMath, the Museum of Mathematics">
+            </a>
+        </div>
+        
+        <nav id="main-nav">
+            <ul class="palanquin-font">
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="exhibitions.html">Exhibits</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="https://shop.momath.org/">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="main-section">
+        <div id="home-main-pictures-container">
+            <img id="home-main-image-1" class="home-main-image" src="images/structure-studio-exhibit-picture-cropped.jpeg" alt="Structure Studio exhibit">
+        </div>
+        
+        <h1 id="home-primary-heading" class="cambay-font">Welcome to the National Museum of Mathematics!</h1>
+        
+        <h2 id="home-secondary-heading" class="cambay-font">The coolest thing that ever happened to math!</h2>
+        
+        <div id="home-visit-container">
+            <div id="home-visit-tickets" class="home-visit">
+                <div>
+                    <h3 class="home-visit-heading cambay-font">Visit Today!</h3>
+                    
+                    <button id="home-buy-tickets-button" class="telex-font">Buy Tickets</button>
+                </div>
+            </div>
+            
+            <div id="home-visit-hours" class="home-visit">
+                <div>
+                    <h3 class="home-visit-heading cambay-font">Hours:</h3>
+                    
+                    <p class="telex-font">Mon - Fri: 10am - 5pm</p>
+                    
+                    <p id="home-visit-hours-note" class="telex-font">MoMath closes early at 2:30pm the first Wednesday of every month.</p>
+                </div>
+            </div>
+            
+            <div id="home-visit-location" class="home-visit">
+                <div>
+                    <h3 class="home-visit-heading cambay-font">Location:</h3>
+                    
+                    <p class="telex-font">
+                        11 East 26th Street<br>
+                        New York, NY 10010
+                    </p>
+                </div>
+            </div>
+            
+            <div id="home-visit-contact" class="home-visit">
+                <div>
+                    <h3 class="home-visit-heading cambay-font">Contact:</h3>
+                    
+                    <p class="telex-font">
+                        Phone: (212) 542-0566<br>
+                        Email: info@momath.org
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="home-under-main-container">
+            <a id="home-upcoming-events-container-link" class="home-under-main" href="events.html">
+                <div class="home-under-main-div">
+                    <h3 class="home-under-main-heading cambay-font">Upcoming Events</h3>
+                    
+                    <ul id="home-upcoming-events-list" class="telex-font">
+                        <li>Dec. 13, 3:30pm: <i>Math Gym</i>, a workout for your brain!</li>
+                        <li>Dec. 14, 6:30pm: <i>Family Fridays</i> at MoMath presented by Two Sigma: "Reach Out and Touch Space!" with Bjoern Muetzel</li>
+                        <li>Dec. 15, 11am-1pm: <i>Folding Fun</i> at MoMath with OrigamiUSA</li>
+                        <li>Dec. 15, 6pm: <i>Equilibrium</i>, an adult evening of mathematical games</li>
+                        <li>Jan. 2, 4pm and 7pm: <i>Math Encounters</i>: "Golden Textures: The Art of Dissecting Golden Geometries" with Doug McKenna</li>
+                        <li>Jan. 3, 6:30pm: <i>Synchronized Spin</i> with John Edmark</li>
+                        <li>Jan. 11, 6:30pm: <i>Family Fridays</i> at MoMath presented by Two Sigma: “Math for the Win!” with Paul Zeitz</li>
+                    </ul>
+                </div>
+            </a>
+            
+            <a id="home-composite-exhibit-container-link" class="home-under-main" href="exhibitions.html#composite-header">
+                <div class="home-under-main-div">
+                    <h3 class="home-under-main-heading cambay-font">Featured <i>Composite Exhibit</i></h3>
+                    
+                    <img id="home-composite-exhibit-title-picture" src="images/Reflections-logo-for-web.png" alt="Reflections: Geometries of the Reflected World">
+                    
+                    <img id="home-composite-exhibit-picture" src="images/Reflections-cropped.jpg" alt="Refelections exhibit">
+                </div>
+            </a>
+            
+            <a id="home-exhibits-container-link" class="home-under-main" href="exhibitions.html">
+                <div class="home-under-main-div">
+                    <h3 class="home-under-main-heading cambay-font">Explore Exhibits</h3>
+                    
+                    <img id="home-exhibits-picture" src="images/square-wheeled-trike-exhibit-picture.jpg" alt="A view of the Square-Wheeled Trike exhibit">
+                </div>
+            </a>
+            
+            <a id="home-field-trips-container-link" class="home-under-main" href="visit.html#field-trips-heading">
+                <div class="home-under-main-div">
+                    <h3 class="home-under-main-heading cambay-font">Schedule a Field Trip</h3>
+                    
+                    <img id="home-field-trips-picture" src="images/MathSquareBright.jpg" alt="Kids and Adults stand on top of the Math Square exhibit, which is currently lit up in different colors.">
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <footer id="site-footer">
+        <p id="footer-momath-info" class="telex-font">
+            National Museum of Mathematics<br>
+            11 East 26th Street<br>
+            New York, NY 10010<br>
+            Phone: (212) 542-0566<br>
+            Email: info@momath.org
+        </p>
+        
+        <div id="social-media-container">
+            <a class="fa fa-youtube" href="https://www.youtube.com/user/MuseumOfMathematics"></a>
+            <a class="fa fa-twitter" href="https://twitter.com/momath1"></a>
+            <a class="fa fa-facebook" href="https://www.facebook.com/MoMath1/"></a>
+            <a class="fa fa-instagram" href="https://www.instagram.com/momath1/"></a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

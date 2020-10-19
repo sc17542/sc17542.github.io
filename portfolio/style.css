@@ -1,0 +1,130 @@
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+}
+
+#main-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#main-nav ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    width: 300px;
+}
+
+#main-nav a {
+    color: black;
+    font-family: "Schoolbell";
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+#main-nav a:hover {
+    color: deepskyblue;
+}
+
+#my-name {
+    font-family: "Nanum Pen Script";
+    font-size: 3em;
+    font-weight: normal;
+}
+
+#my-name a {
+    color: black;
+    text-decoration: none;
+}
+
+.proj-preview {
+    padding: 20px 20px;
+}
+
+.proj-preview a {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.proj-preview a:hover {
+    color: deepskyblue;
+}
+
+.proj-preview div {
+    padding: 0 30px;
+}
+
+.proj-preview h3 {
+    font-family: "Grandstander";
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.proj-preview img {
+    height: 250px;
+}
+
+.proj-preview p {
+    font-family: "Averia Sans Libre";
+}
+
+#project-page {
+    padding: 0 20px;
+}
+
+#project-page a {
+    color: black;
+    font-family: "Averia Sans Libre";
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+#project-page a:hover {
+    color: deepskyblue;
+}
+
+#project-page h2 {
+    font-family: "Grandstander";
+}
+
+#work-nav {
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+}
+
+#work-nav ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: "Schoolbell";
+    justify-content: space-around;
+    list-style: none;
+}
+
+#work-section, #about-section, #contact-section {
+    padding: 0 20px;
+}
+
+#work-section h2, #about-section h2, #contact-section h2 {
+    font-family: "Schoolbell";
+    font-size: 1.8em;
+    text-align: center;
+}
