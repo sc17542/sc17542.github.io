@@ -25,7 +25,6 @@
             <ul>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -33,8 +32,173 @@
     <section id="project-page">
         <h2>Museum of Mathematics Website Redesign</h2>
         
-        <a href="momath-website-redesign/index.html" target="_blank">View the website redesign here</a>
+        <p>
+            <img id="main-proj-image" src="images/momath-proj-image.png" alt="A picture of the home page for the redesigned Museum of Mathematics website">
+        </p>
         
+        <a class="project-link" href="momath-website-redesign/index.html" target="_blank">View the website redesign here</a>
+        
+        <p>
+            This was made for a final project in an Intro to Web Development class at NYU Tandon in the 2018 fall semester.
+        </p>
+        
+        <p>
+            For the assignment, students had to identify a problem that could benefit from better design and then build a website using HTML, CSS, and JavaScript to solve that problem. I chose to do a redesign of the Museum of Mathematics website.
+        </p>
+        
+        <p>
+            Note: The actual website for the Museum of Mathematics has changed since 2018. See how it looked back when I was doing this project <a href="https://web.archive.org/web/20181127004911/https://momath.org/">here</a>.
+        </p>
+        
+        <br>
+        
+        <h3>Problems with the Current Website Design</h3>
+        
+        <h4>The website doesn't look or feel modern.</h4>
+        
+        <p>
+            The way the website currently looked seemed outdated for 2018. According to the Internet Archive, it has pretty much looked this way since the website was created. Having a website that hasn't been updated to the current times could potentially detract new visitors unfamiliar with the museum.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/original-momath-website-2018.png" alt="What the Museum of Mathematics website looked like in 2018">
+        </p>
+        
+        <h4>The museum itself was interactive, but the website wasn't.</h4>
+        
+        <p>
+            The whole museum experience is built around giving interactive exhibits for kids to play with. However, their website didn't really seem to reflect that kind of feeling. They did have printout activities available on the website, but I felt that the website could maybe improve in its interactivity on a digital level.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/momath-exhibit-example.jpeg" alt="Kids interacting with the Math Square exhibit at the Museum of Mathematics">
+        </p>
+        
+        <h4>Some pages have too much information there at once.</h4>
+        
+        <p>
+            Even on just the home page, when you scroll down, there are a bunch of links to different things that might not be necessary to include all at once. Having this can make it difficult to navigate and make it feel overwhelming for a user.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/multiple-links-on-momath-homepage.png" alt="A picture showing that there are a lot of links just on the Museum of Mathematics home page">
+        </p>
+        
+        <br>
+        
+        <h3>Planning Out the Design</h3>
+        
+        <h4>Mood Board</h4>
+        
+        <p>
+            In considering how to redesign the website, I looked at how other museums in New York designed their websites. I also looked at the Museum of Mathematics's shop website, which actually had more of the modern look the main website was lacking. Since its shop already had that updated design, I decided to go more towards that direction.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/momath-mood-board.png" alt="Mood board for the Museum of Mathematics Redesign">
+        </p>
+        
+        <h4>Site Map</h4>
+        
+        <p>
+            The project assignment required students to have at least three content areas. I decided to focus on four of the main pages, such as the home page, visit page, exhibitions page, and events page. The website would also include a link to the actual Museum of Mathematics's shop website.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/momath-sitemap.png" alt="Site map for the Museum of Mathematics Redesign">
+        </p>
+        
+        <h4>Wireframes</h4>
+        
+        <p>
+            I redesigned the home page to have less text and information. I decided to just include sections that museums tend to highlight on the front page, such as the events, exhibits, and visiting.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/momath-home-wireframe.png" alt="Wireframe for the redesigned Museum of Mathematics home page">
+        </p>
+        
+        <p>
+            The original website had the directions to the museum and information about field trips on separate pages from the visit page. For the redesign, I decided to combine all of them into one visit page so users didn't have to go to a whole other page just to find out how to get there or how to schedule a field trip. I also included a link to where it is on Google Maps since other museums tend to do that.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/momath-visit-wireframe.png" alt="Wireframe for the redesigned Museum of Mathematics visit page">
+        </p>
+        
+        <p>
+            The original exhibits page seemed a little overwhelming and confusing, so I decided to redesign how the exhibit map and descriptions would be displayed to the user. This was the most notable change I made to the design so I will go into the process a bit further.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/momath-exhibitions-wireframe.png" alt="Wireframe for the redesigned Museum of Mathematics exhibitions page">
+        </p>
+        
+        <h3>Problems with the Current Exhibits Page</h3>
+        
+        <p>
+            Upon interacting with the current exhibits page, I found a couple of problems with how it was designed.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/original-momath-exhibits-page-2018.png" alt="The original exhibits page for the Museum of Mathematics">
+        </p>
+        
+        <h4>1. "Click on the exhibit icon or description to see photos."</h4>
+        
+        <p>
+            When I first saw this sentence, I thought it meant that I could click on the pictures on the gray map to reveal something. However, when I did that, it just opened up a .jpg version of that same gray map. After that, I realized that they meant that we could click on the colorful icons below the map. With the way they worded the sentence, it wasn't completely clear where to click. Should we click on the pictures above or below? I had expected something different and was slightly disappointed when it hadn't done what I thought it would.
+        </p>
+        
+        <h4>2. Inconsistent user feedback for what is clickable</h4>
+        
+        <p>
+            One of the reasons why I thought that I should click on the map was that the cursor changed when I hovered over it. However, the same wasn't true for the colorful square icons. When you hovered over them, the cursor didn't change. It wasn't clear that they were actually clickable.
+        </p>
+        
+        <h4>3. Too much information on the screen at once</h4>
+        
+        <p>
+            For Floor 0, there were 20 exhibit icons and descriptions listed out all at once. This especially makes it difficult if you wanted to know more about a particular exhibit you see on the map because you would have to scroll down and find the exhibit name among the 19 other exhibit names listed.
+        </p>
+        
+        <br>
+        
+        <h3>Solution: An Interactive Exhibit Map</h3>
+        
+        <p>
+            Taking these problems into consideration, I decided to build an interactive exhibit map. Users could click on the exhibit icons on the map and it would show them the description for just that one exhibit. That cleared up the issues of where to click and of having too much info at once. Plus, it brought a level of interactivity that the museum itself had but the website lacked.
+        </p>
+        
+        <p>
+            In order to create it, I took the gray maps that they had and I recreated the little exhibit icons in Illustrator. I created two versions of each icon, a regular version and a yellow version that would be used when you hover over the icon.
+        </p>
+        
+        <p>
+            <img src="images/the-mathenaeum.png" alt="Map icon for the Mathenaeum">
+            <img src="images/the-mathenaeum-hover.png" alt="Map icon for the Mathenaeum when you hover over it">
+        </p>
+        
+        <p>
+            Once you click on an exhibit's icon, the corresponding description would show up in the display below the map. That way, you could learn about a specific exhibit on the map without having to scroll down and search for it.
+        </p>
+        
+        <p>
+            <img class="project-images" src="images/momath-no-exhibit-selected.png" alt="No exhibit selected on the redesigned Exhibits page">
+            <img class="project-images" src="images/momath-exhibit-selected.png" alt="The Mathenaeum exhibit is selected on the redesigned Exhibits page">
+        </p>
+        
+        <br>
+        
+        <h3>Improvements for the Future</h3>
+        
+        <p>
+            Since this project was created for a class, there was a time limit on when to submit it, which meant that I wouldn't have time to add everything I wanted to. For one thing, there are a lot of pages on the actual website and I only focused on improving four of them, so I could try to work on redesigning the whole website in a later iteration of this project. I could also improve on the exhibits page by adding the exhibit names back onto the map icons and adding images of the exhibit underneath the description like I had in my wireframe. There are several things that I could improve on, but this was a good first step in redesigning the Museum of Mathematics's website and I enjoyed coming up with ways to fix it, especially when it came to the interactive exhibit map.
+        </p>
+        
+        <a class="project-link" href="momath-website-redesign/index.html" target="_blank">View the website redesign here</a>
+        
+        <br><br>
     </section>
 </body>
 </html>
