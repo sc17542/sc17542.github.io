@@ -1,0 +1,30 @@
+
+header {
+    background-color: darkblue;
+}
+
+header h1 {
+    color: white;
+}
+
+#page-button-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#page-content {
+    width: 100%;
+}
+
+#page-content img {
+    width: 100%;
+}
+
+#page-content video {
+    width: 100%;
+}
+
+#page-num-display {
+    padding: -0 10px;
+}
