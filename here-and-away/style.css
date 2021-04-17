@@ -1,23 +1,63 @@
 
+body {
+    background-color: #959db2;
+}
+
+#button-div {
+    max-width: 880px;
+    position: relative;
+    top: -30px;
+    width: 100%;
+}
+
+.font-patrick-hand {
+    font-family: "Patrick Hand";
+}
+
+h1 {
+    font-family: "Caveat";
+    font-size: 2.7em;
+    padding: 15px 0 10px 20px;
+}
+
 header {
-    background-color: darkblue;
+    background-color: #505c81;
+    left: -10px;
+    padding-left: 17px;
+    position: relative;
+    top: -35px;
+    width: 100%;
 }
 
 header h1 {
     color: white;
 }
 
+#next-button, #prev-button {
+    background-color: #505c81;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.2em;
+}
+
 #page-button-div {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: -20px;
     width: 100%;
 }
 
 #page-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -40px;
     width: 100%;
 }
 
 #page-content img {
+    max-width: 880px;
     width: 100%;
 }
 
@@ -26,5 +66,24 @@ header h1 {
 }
 
 #page-num-display {
+    font-size: 1.2em;
     padding: -0 10px;
 }
+
+#song-button-1, #song-button-2, #song-button-4, #song-button-5 {
+    left: 65%;
+}
+
+#song-button-3 {
+    left: 15%;
+}
+
+.song-buttons {
+    background-color: #505c81;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+}
+
+

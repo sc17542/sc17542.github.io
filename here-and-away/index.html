@@ -3,29 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Here and Away</title>
+    <title>Here &amp; Away</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Here and Away</h1>
+        <h1>Here &amp; Away</h1>
     </header>
     
     <section>
         <div id="page-content">
-            <img src="images/page0-1.png" alt="">
+            <img id="page" src="images/cover-page.png" alt="">
         </div>
         
         <div id="button-div">
-            <button onclick="playSong1()" type="button">Play</button>
+<!--            <button id="song-button-1" class="song-buttons font-patrick-hand" onclick="playSong1()" type="button">Play Song #1</button>-->
         </div>
         
-        <div id="page-button-div">
-            <button id="prev-button" onclick="goToPrevPage()" type="button">Previous</button>
-            <div id="page-num-display">1/6</div>
-            <button id="next-button" onclick="goToNextPage()" type="button">Next</button>
+        <div id="page-button-div" class="font-patrick-hand">
+            <button id="prev-button" class="font-patrick-hand" onclick="goToPrevPage()" type="button">Previous</button>
+            <div id="page-num-display">1/7</div>
+            <button id="next-button" class="font-patrick-hand" onclick="goToNextPage()" type="button">Next</button>
         </div>
     </section>
     
