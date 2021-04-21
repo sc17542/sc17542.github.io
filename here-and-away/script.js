@@ -7,7 +7,7 @@ var pageImg5 = '<img src="images/page8-9.png" alt="Pages 8-9">';
 var pageImg6 = '<img src="images/page10-11.png" alt="Pages 10-11">';
 
 var songVid1 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/okay.mp4" type="video/mp4"></video>';
-var songVid2 = '<video id="song-video-2" width="100%" autoplay onended="endedSong2()"><source src="videos/monsters.mp4" type="video/mp4"></video>';
+var songVid2 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/monsters.mp4" type="video/mp4"></video>';
 var songVid3 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/deardestiny.mp4" type="video/mp4"></video>';
 var songVid4 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/you.mp4" type="video/mp4"></video>';
 var songVid5 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/notokay.mp4" type="video/mp4"></video>';
@@ -16,7 +16,7 @@ var startButton1 = '<button id="song-button-1" class="song-buttons font-patrick-
 var endButton1 = '<button id="song-button-1" class="song-buttons font-patrick-hand" onclick="stopSong()" type="button">Stop Song #1</button>';
 
 var startButton2 = '<button id="song-button-2" class="song-buttons font-patrick-hand" onclick="playSong2()" type="button">Play Song #2</button>';
-var endButton2 = '<button id="song-button-2" class="song-buttons font-patrick-hand" onclick="stopSong2()" type="button">Stop Song #2</button>';
+var endButton2 = '<button id="song-button-2" class="song-buttons font-patrick-hand" onclick="stopSong()" type="button">Stop Song #2</button>';
 
 var startButton3 = '<button id="song-button-3" class="song-buttons font-patrick-hand" onclick="playSong3()" type="button">Play Song #3</button>';
 var endButton3 = '<button id="song-button-3" class="song-buttons font-patrick-hand" onclick="stopSong()" type="button">Stop Song #3</button>';
@@ -44,16 +44,10 @@ function playSong1() {
 function playSong2() {
     pageContent.innerHTML = songVid2;
     buttonDiv.innerHTML = endButton2;
-    var songVideo2 = document.getElementById("song-video-2");
-    var turnedPage = false;
-    while (turnedPage == false) {
-//        if (songVideo2.ended) {
-//            
-//        }
-        if (songVideo2.currentTime >= 10) {
-            turnedPage = true;
-        }
-    }
+    setTimeout(function(){
+        currPageNum = 4;
+        pageNumDisplay.innerHTML = "4/7";
+    }, 50000);
 }
 
 function playSong3() {
@@ -79,6 +73,7 @@ function stopSong() {
         buttonDiv.innerHTML = startButton1;
     } else if (currPageNum == 3) {
         pageContent.innerHTML = pageImg2;
+        buttonDiv.innerHTML = startButton2;
     } else if (currPageNum == 4) {
         pageContent.innerHTML = pageImg3;
         buttonDiv.innerHTML = startButton3;
@@ -91,14 +86,6 @@ function stopSong() {
         pageContent.innerHTML = pageImg6;
         buttonDiv.innerHTML = startButton5;
     }
-}
-
-function stopSong2() {
-    
-}
-
-function endedSong2() {
-    
 }
 
 function goToPrevPage() {
@@ -188,6 +175,4 @@ function updateDisabledButtons() {
     }
 }
 
-
-//var page = document.getElementById("page");
 
