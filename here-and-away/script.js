@@ -10,7 +10,7 @@ var songVid1 = '<video width="100%" autoplay onended="stopSong()"><source src="v
 var songVid2 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/monsters.mp4" type="video/mp4"></video>';
 var songVid3 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/deardestiny.mp4" type="video/mp4"></video>';
 var songVid4 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/you.mp4" type="video/mp4"></video>';
-var songVid5 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/notokay.mp4" type="video/mp4"></video>';
+var songVid5 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/okayreprise.mp4" type="video/mp4"></video>';
 
 var startButton1 = '<button id="song-button-1" class="song-buttons font-patrick-hand" onclick="playSong1()" type="button">Play Song #1</button>';
 var endButton1 = '<button id="song-button-1" class="song-buttons font-patrick-hand" onclick="stopSong()" type="button">Stop Song #1</button>';
@@ -58,6 +58,10 @@ function playSong3() {
 function playSong4() {
     pageContent.innerHTML = songVid4;
     buttonDiv.innerHTML = endButton4;
+    setTimeout(function(){
+        currPageNum = 7;
+        pageNumDisplay.innerHTML = "7/7";
+    }, 39000);
 }
 
 function playSong5() {

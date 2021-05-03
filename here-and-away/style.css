@@ -1,13 +1,19 @@
 
+#all-buttons-div {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+}
+
 body {
     background-color: #959db2;
 }
 
 #button-div {
     height: 35px;
-    max-width: 880px;
+    max-width: 1000px;
     position: relative;
-    top: -30px;
+/*    top: -30px;*/
     width: 100%;
 }
 
@@ -22,8 +28,8 @@ body {
 
 h1 {
     font-family: "Caveat";
-    font-size: 2.7em;
-    padding: 15px 0 10px 20px;
+    font-size: 2em;
+    padding: 15px 0 5px 20px;
 }
 
 header {
@@ -50,25 +56,26 @@ header h1 {
     display: flex;
     justify-content: center;
     position: relative;
-    top: -20px;
+/*    top: -20px;*/
     width: 100%;
 }
 
 #page-content {
     display: flex;
     justify-content: center;
+    padding: 10px 0;
     position: relative;
-    top: -40px;
+/*    top: -40px;*/
     width: 100%;
 }
 
 #page-content img {
-    max-width: 880px;
+    max-width: 1000px;
     width: 100%;
 }
 
 #page-content video {
-    max-width: 880px;
+    max-width: 1000px;
     width: 100%;
 }
 
@@ -94,3 +101,5 @@ header h1 {
 }
 
 
+#1150
+#600?
