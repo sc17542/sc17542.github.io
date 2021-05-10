@@ -107,7 +107,7 @@ function playSong4() {
         pageNumDisplay.innerHTML = "7/7";
         nextButton.disabled = true;
         nextButton.style.opacity = 0.6;
-    }, 39000);
+    }, 40000);
 }
 
 function playSong5() {
@@ -242,6 +242,9 @@ function goToPrevPage() {
 //        buttonDiv.innerHTML = startButton4;
         leftSongBtnDiv.innerHTML = "";
         rightSongBtnDiv.innerHTML = startButton4;
+        video4.style.opacity = 0;
+        video4.pause();
+        video4.currentTime = 0;
         video5.style.opacity = 0;
         video5.pause();
         video5.currentTime = 0;
@@ -384,3 +387,4 @@ function changeToOnePageView() {
 function changeToTwoPageView() {
     inTwoPageView = true;
 }
+
