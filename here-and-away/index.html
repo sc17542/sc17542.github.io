@@ -15,15 +15,38 @@
 </head>
 
 <body>
-<!--
     <header>
         <h1>Here &amp; Away</h1>
+        
+        <div id="header-buttons">
+            <div id="one-two-page-buttons">
+                <button id="one-page-button" title="Display as one page" type="button"><img src="images/one-page-icon.png" alt="One page icon"></button>
+                
+                <button id="two-page-button" title="Display as two pages" type="button"><img src="images/two-pages-icon.png" alt="Two pages icon"></button>
+            </div>
+            
+            <div id="zoom-in-out-buttons">
+                <button id="zoom-in-button" onclick="zoomIn()" title="Zoom in" type="button"><img src="images/zoom-in-icon.png" alt="Zoom in icon"></button>
+                <button id="zoom-out-button" onclick="zoomOut()" title="Zoom out" type="button"><img src="images/zoom-out-icon.png" alt="Zoom out icon"></button>
+            </div>
+        </div>
     </header>
--->
     
     <section>
         <div id="page-content">
-            <img id="page" src="images/cover-page.png" alt="">
+            <img id="cover-page" class="pages" src="images/cover-page.png" alt="Cover page">
+            <img id="page0-1" class="pages" src="images/page0-1.png" alt="Page 1">
+            <img id="page2-3" class="pages" src="images/page2-3.png" alt="Pages 2-3">
+            <img id="page4-5" class="pages" src="images/page4-5.png" alt="Pages 4-5">
+            <img id="page6-7" class="pages" src="images/page6-7.png" alt="Pages 6-7">
+            <img id="page8-9" class="pages" src="images/page8-9.png" alt="Pages 8-9">
+            <img id="page10-11" class="pages" src="images/page10-11.png" alt="Pages 10-11">
+            <div id="song-video-div"></div>
+            <video id="video-1" class="videos" width="960px" onended="stopSong()"><source src="videos/okay.mp4" type="video/mp4"></video>
+            <video id="video-2" class="videos" width="960px" onended="stopSong()"><source src="videos/monsters.mp4" type="video/mp4"></video>
+            <video id="video-3" class="videos" width="960px" onended="stopSong()"><source src="videos/deardestiny.mp4" type="video/mp4"></video>
+            <video id="video-4" class="videos" width="960px" onended="stopSong()"><source src="videos/you.mp4" type="video/mp4"></video>
+            <video id="video-5" class="videos" width="960px" onended="stopSong()"><source src="videos/okayreprise.mp4" type="video/mp4"></video>
         </div>
         
         <div id="button-div-container">
@@ -32,30 +55,31 @@
             </div>
         </div>
         
+<!--
         <div id="page-button-div" class="font-patrick-hand">
             <button id="prev-button" class="font-patrick-hand" onclick="goToPrevPage()" type="button">Prev</button>
             <div id="page-num-display">1/7</div>
             <button id="next-button" class="font-patrick-hand" onclick="goToNextPage()" type="button">Next</button>
         </div>
+-->
         
-<!--
         <div id="all-buttons-container">
             <div id="all-buttons-div">
                 <div id="left-song-btn-div">
-                    <button>left</button>
+<!--                    <button class="font-patrick-hand">left</button>-->
                 </div>
 
-                <div id="prev-next-btn-div">
-                    <button>prev</button>
-                    <button>next</button>
+                <div id="page-button-div" class="font-patrick-hand">
+                    <button id="prev-button" class="font-patrick-hand" onclick="goToPrevPage()" type="button">Prev</button>
+                    <div id="page-num-display">1/7</div>
+                    <button id="next-button" class="font-patrick-hand" onclick="goToNextPage()" type="button">Next</button>
                 </div>
 
                 <div id="right-song-btn-div">
-                    <button>right</button>
+<!--                    <button class="font-patrick-hand">right</button>-->
                 </div>
             </div>
         </div>
--->
     </section>
     
     <script src="script.js"></script>

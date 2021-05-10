@@ -1,8 +1,20 @@
 
 #all-buttons-div {
-    background-color: aqua;
+    background-color: #333b50;
+    bottom: 0;
     display: flex;
     justify-content: space-around;
+    left: -10px;
+    padding: 10px 17px 10px 0;
+    position: fixed;
+    width: 100%;
+}
+
+#all-buttons-div button {
+    background-color: white;
+    border-radius: 7px;
+    color: black;
+    font-size: 1.2em;
 }
 
 body {
@@ -29,20 +41,41 @@ body {
 h1 {
     font-family: "Caveat";
     font-size: 2em;
-    padding: 15px 0 5px 20px;
+    padding: 15px 0 0 20px;
 }
 
 header {
     background-color: #505c81;
+    display: flex;
+    justify-content: space-between;
     left: -10px;
     padding-left: 17px;
-    position: relative;
+    position: fixed;
     top: -35px;
     width: 100%;
+    z-index: 1;
 }
 
 header h1 {
     color: white;
+}
+
+#header-buttons {
+    align-items: center;
+    display: flex;
+    padding: 0 15px;
+}
+
+#header-buttons button {
+    position: relative;
+    top: 10px;
+}
+
+#left-song-btn-div {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    width: 35%;
 }
 
 #next-button, #prev-button {
@@ -52,44 +85,78 @@ header h1 {
     font-size: 1.2em;
 }
 
+#one-page-button, #two-page-button, #zoom-in-button, #zoom-out-button {
+    background-color: #d0d8ed;
+    border-radius: 7px;
+}
+
+#one-page-button img, #two-page-button img {
+    width: 35px;
+}
+
+#one-two-page-buttons {
+    padding: 0 10px;
+}
+
 #page-button-div {
     display: flex;
     justify-content: center;
     position: relative;
 /*    top: -20px;*/
-    width: 100%;
+    width: 30%;
 }
 
 #page-content {
+/*
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+*/
+    padding: 80px 0;
     position: relative;
-/*    top: -40px;*/
-    width: 100%;
+    top: -10px;
+/*    width: 100%;*/
+/*    width: 1000px;*/
 }
 
 #page-content img {
+/*
     max-width: 1000px;
     width: 100%;
+*/
+    padding-bottom: 100px;
+    width: 960px;
 }
 
 #page-content video {
+/*
     max-width: 1000px;
     width: 100%;
+*/
+/*    width: 960px;*/
 }
 
 #page-num-display {
+    color: white;
     font-size: 1.2em;
     padding: -0 10px;
 }
 
+.pages {
+    position: absolute;
+}
+
+#right-song-btn-div {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+
 #song-button-1, #song-button-2, #song-button-4, #song-button-5 {
-    left: 65%;
+/*    left: 65%;*/
 }
 
 #song-button-3 {
-    left: 15%;
+/*    left: 15%;*/
 }
 
 .song-buttons {
@@ -100,6 +167,24 @@ header h1 {
     position: relative;
 }
 
+#song-video-div {
+    position: absolute;
+}
 
+.videos {
+    opacity: 0;
+    position: absolute;
+}
+
+#zoom-in-out-buttons {
+    padding: 0 10px;
+}
+
+#zoom-in-button img, #zoom-out-button img {
+    width: 26px;
+}
+
+
+/*
 #1150
-#600?
+#600?*/
