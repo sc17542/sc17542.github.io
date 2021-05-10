@@ -1,16 +1,3 @@
-//var pageImg0 = '<img id="cover-page" src="images/cover-page.png" alt="Cover page">';
-//var pageImg1 = '<img id="page0-1" src="images/page0-1.png" alt="Page 1">';
-//var pageImg2 = '<img id="page2-3" src="images/page2-3.png" alt="Pages 2-3">';
-//var pageImg3 = '<img id="page4-5" src="images/page4-5.png" alt="Pages 4-5">';
-//var pageImg4 = '<img id="page6-7" src="images/page6-7.png" alt="Pages 6-7">';
-//var pageImg5 = '<img id="page8-9" src="images/page8-9.png" alt="Pages 8-9">';
-//var pageImg6 = '<img id="page10-11" src="images/page10-11.png" alt="Pages 10-11">';
-
-var songVid1 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/okay.mp4" type="video/mp4"></video>';
-var songVid2 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/monsters.mp4" type="video/mp4"></video>';
-var songVid3 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/deardestiny.mp4" type="video/mp4"></video>';
-var songVid4 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/you.mp4" type="video/mp4"></video>';
-var songVid5 = '<video width="100%" autoplay onended="stopSong()"><source src="videos/okayreprise.mp4" type="video/mp4"></video>';
 
 var startButton1 = '<button id="song-button-1" class="song-buttons font-patrick-hand" onclick="playSong1()" type="button">Play Song #1</button>';
 var endButton1 = '<button id="song-button-1" class="song-buttons font-patrick-hand" onclick="stopSong()" type="button">Stop Song #1</button>';
@@ -61,6 +48,8 @@ var video4 = document.getElementById("video-4");
 var video5 = document.getElementById("video-5");
 
 var currPageSize = 960;
+
+var inTwoPageView = true;
 
 
 coverPage.style.opacity = 1;
@@ -380,4 +369,18 @@ function updatePageSize() {
     video3.style.width = currPageSize.toString() + "px";
     video4.style.width = currPageSize.toString() + "px";
     video5.style.width = currPageSize.toString() + "px";
+    
+    if (currPageSize == 960) {
+        pageContent.style.display = "flex";
+    } else {
+        pageContent.style.display = "inherit";
+    }
+}
+
+function changeToOnePageView() {
+    inTwoPageView = false;
+}
+
+function changeToTwoPageView() {
+    inTwoPageView = true;
 }

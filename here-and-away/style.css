@@ -107,10 +107,8 @@ header h1 {
 }
 
 #page-content {
-/*
     display: flex;
     justify-content: center;
-*/
     padding: 80px 0;
     position: relative;
     top: -10px;
@@ -182,6 +180,12 @@ header h1 {
 
 #zoom-in-button img, #zoom-out-button img {
     width: 26px;
+}
+
+@media screen and (max-width: 980px) {
+    #page-content {
+        display: inherit;
+    }
 }
 
 
