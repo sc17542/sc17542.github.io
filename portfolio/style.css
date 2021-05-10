@@ -15,6 +15,10 @@
     width: 70%;
 }
 
+#emily-design-png {
+    width: 30%;
+}
+
 .iframe-container {
     overflow: hidden;
     padding-top: 56.25%;
@@ -82,6 +86,12 @@
 #my-name a {
     color: black;
     text-decoration: none;
+}
+
+.proj-bullet-points {
+    font-family: "Averia Sans Libre";
+    font-size: 1.1em;
+    line-height: 26px;
 }
 
 .proj-preview {
